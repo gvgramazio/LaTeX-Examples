@@ -1,0 +1,120 @@
+    \documentclass[10pt]{article}
+
+    \usepackage{fontspec}
+
+    \setmainfont{RobotoSlab}[
+      Path = fonts/Roboto_Slab/,
+      Extension = .ttf,
+      UprightFont = *-Regular,
+      %-- Upright --%
+      FontFace={ul}{n}{Font=*-Thin},
+      FontFace={l}{n}{Font=*-Light},
+      FontFace={m}{n}{Font=*-Regular},
+      FontFace={b}{n}{Font=*-Bold},
+    ]
+
+    \setmonofont{RobotoMono}[
+      Path = fonts/Roboto_Mono/,
+      Extension = .ttf,
+      UprightFont = *-Regular,
+      %-- Upright --%
+      FontFace={ul}{n}{Font=*-Thin},
+      FontFace={l}{n}{Font=*-Light},
+      FontFace={m}{n}{Font=*-Regular},
+      FontFace={mb}{n}{Font=*-Medium},
+      FontFace={b}{n}{Font=*-Bold},
+      % %-- Italic --%
+      FontFace={l}{it}{Font=*-LightItalic},
+      FontFace={m}{it}{Font=*-Italic},
+      FontFace={mb}{it}{Font=*-MediumItalic},
+      FontFace={b}{it}{Font=*-BoldItalic},
+    ]
+
+    \setsansfont{Roboto}[
+      Path = fonts/,
+      Extension = .ttf,
+      UprightFont = Roboto/*-Regular,
+      %-- Upright --%
+      FontFace={ul}{n}{Font=Roboto/*-Thin},
+      FontFace={l}{n}{Font=Roboto/*-Light},
+      FontFace={m}{n}{Font=Roboto/*-Regular},
+      FontFace={mb}{n}{Font=Roboto/*-Medium},
+      FontFace={b}{n}{Font=Roboto/*-Bold},
+      FontFace={eb}{n}{Font=Roboto/*-Black},
+      %-- Italic --%
+      FontFace={ul}{it}{Font=Roboto/*-ThinItalic},
+      FontFace={l}{it}{Font=Roboto/*-LightItalic},
+      FontFace={m}{it}{Font=Roboto/*-Italic},
+      FontFace={mb}{it}{Font=Roboto/*-MediumItalic},
+      FontFace={b}{it}{Font=Roboto/*-BoldItalic},
+      FontFace={eb}{it}{Font=Roboto/*-BlackItalic},
+      %-- Condensed Upright --%
+      FontFace={cl}{n}{Font=Roboto_Condensed/*Condensed-Light},
+      FontFace={cm}{n}{Font=Roboto_Condensed/*Condensed-Regular},
+      FontFace={cb}{n}{Font=Roboto_Condensed/*Condensed-Bold},
+      %-- Condensed Italic --%
+      FontFace={cl}{it}{Font=Roboto_Condensed/*Condensed-LightItalic},
+      FontFace={cm}{it}{Font=Roboto_Condensed/*Condensed-Italic},
+      FontFace={cb}{it}{Font=Roboto_Condensed/*Condensed-BoldItalic},
+    ]
+
+    \DeclareRobustCommand{\ulseries}{\fontseries{ul}\selectfont}
+    \DeclareRobustCommand{\lseries}{\fontseries{l}\selectfont}
+    \DeclareRobustCommand{\mseries}{\fontseries{m}\selectfont}
+    \DeclareRobustCommand{\mbseries}{\fontseries{mb}\selectfont}
+    \DeclareRobustCommand{\bseries}{\fontseries{b}\selectfont}
+    \DeclareRobustCommand{\ebseries}{\fontseries{eb}\selectfont}
+    \DeclareRobustCommand{\clseries}{\fontseries{cl}\selectfont}
+    \DeclareRobustCommand{\cmseries}{\fontseries{cm}\selectfont}
+    \DeclareRobustCommand{\cbseries}{\fontseries{cb}\selectfont}
+    \DeclareTextFontCommand{\textul}{\ulseries}
+    \DeclareTextFontCommand{\textl}{\lseries}
+    \DeclareTextFontCommand{\textm}{\mseries}
+    \DeclareTextFontCommand{\textmb}{\mbseries}
+    \DeclareTextFontCommand{\textb}{\bseries}
+    \DeclareTextFontCommand{\texteb}{\ebseries}
+    \DeclareTextFontCommand{\textcl}{\clseries}
+    \DeclareTextFontCommand{\textcm}{\cmseries}
+    \DeclareTextFontCommand{\textcb}{\cbseries}
+
+    \begin{document}
+
+    \textul{Abc Thin} {\ulseries Thin} \par
+    \textl{Abc Light} {\lseries Light} \par
+    \textm{Abc Regular} {\mseries Regular} \par
+    \textb{Abc Bold} {\bseries Bold} \par
+    \ttfamily
+    \textul{Abc Thin} {\ulseries Thin} \par
+    \textl{Abc Light} {\lseries Light} \par
+    \textm{Abc Regular} {\mseries Regular} \par
+    \textmb{Abc Medium} {\mbseries Medium} \par
+    \textb{Abc Bold} {\bseries Bold} \par
+    \itshape
+    \textl{Abc Light} {\lseries Light} \par
+    \textm{Abc Regular} {\mseries Regular} \par
+    \textmb{Abc Medium} {\mbseries Medium} \par
+    \textb{Abc Bold} {\bseries Bold} \par
+    \sffamily\upshape
+    \textul{Abc Thin} {\ulseries Thin} \par
+    \textl{Abc Light} {\lseries Light} \par
+    \textm{Abc Regular} {\mseries Regular} \par
+    \textmb{Abc SemiBold} {\mbseries SemiBold} \par
+    \textb{Abc Bold} {\bseries Bold} \par
+    \texteb{Abc Black} {\ebseries Black} \par
+    \itshape
+    \textul{Abc Thin} {\ulseries Thin} \par
+    \textl{Abc Light} {\lseries Light} \par
+    \textm{Abc Regular} {\mseries Regular} \par
+    \textmb{Abc SemiBold} {\mbseries SemiBold} \par
+    \textb{Abc Bold} {\bseries Bold} \par
+    \texteb{Abc Black} {\ebseries Black} \par
+    \upshape
+    \textcl{Abc Light} {\clseries Light} \par
+    \textcm{Abc Regular} {\cmseries Regular} \par
+    \textcb{Abc Bold} {\cbseries Bold} \par
+    \itshape
+    \textcl{Abc Light} {\clseries Light} \par
+    \textcm{Abc Regular} {\cmseries Regular} \par
+    \textcb{Abc Bold} {\cbseries Bold} \par
+
+    \end{document}
